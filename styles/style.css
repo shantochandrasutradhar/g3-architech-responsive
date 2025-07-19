@@ -11,29 +11,26 @@
 }
 
 
-/*navbar style*/
+/*navbar and banner style*/
 
 * {
     margin: 0px;
     padding: 0px;
 }
-
 .banner-content{
-    text-align: center;
-   
+    width: 100%;
+    text-align: center;  
 }
-
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 120px;
-   
+    padding: 15px 140px; 
 }
 .img{
-    max-width: 1260px;
-    text-align: center;
-    padding: 20px 120px 30px 120px;
+    max-width: 1220px;
+    width: 100%;
+    padding: 20px 140px 30px 140px;
 }
 .nav-item{
     display: inline-block;
@@ -50,8 +47,7 @@
     color: rgb(83, 31, 255);
 }
 .bg-color{
-    background-color: rgb(252, 235, 213);
-  
+    background-color: rgb(250, 239, 225);
 }
 .brand{
     font-size: 45px;
@@ -78,7 +74,50 @@
 }
 
 
+/*main section style*/
+main{
+    max-width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
 
+.team-container{
+    display: flex;
+    align-items: center;
+    margin: 70px auto;
+    text-align: center;
+    width: 100%;
+}
+.team-gallary{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-right: 30px;
+    width: 50%;
+    padding: 50px 10px 50px 10px;
+}
+.feature-content{
+    text-align: left;
+    margin-left: 40px;
+    width: 50%;
+    padding: 40px;
+}
+.feature-title{
+    font-size: 45px;
+    font-weight: 600;
+}
+.feature-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px;
+}
+.feature{
+    color: rgb(248, 153, 37); ;
+}
+.quick-list{
+    color: rgb(168, 169, 170);
+}
 
 
 
