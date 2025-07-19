@@ -125,24 +125,33 @@ main{
 /* Responsive media query*/
 
 @media screen and (max-width:576px){
-    .navbar,.nav-links,.banner-content,.img,.banner-heading{
+    .navbar,.nav-links,.banner-content,.img,.banner-heading,.team-gallary,.feature-content,.team-container{
         flex-direction: column;
         text-align: center;
     }
     .nav-links{
         margin-top: 10px;
     }
-    .banner-content{
-        
-        padding: 0px 20px 20px 20px;
-    }
     .img{
         width: 250px;
         height: 150px;
-        padding: 0px 0px 0px 110px;
+        padding: 0px 0px 0px 60px;
         text-align: center;
     }
     .banner-heading{
         margin-top: 10px;
+        font-size: 50px;
+    }
+    .team-gallary{
+        display: block;
+        padding: 0px 0px 0px 15px;
+        margin: 0px; 
+    }
+    .feature-content{   
+      margin: 0px;
+      padding: 20px 0px 0px 100px;
+    }
+    .team-container{
+        display: block;  
     }
 }
