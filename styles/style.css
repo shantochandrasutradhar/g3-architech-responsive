@@ -27,10 +27,11 @@
     align-items: center;
     padding: 15px 140px; 
 }
-.img{
+.banner-img{
     max-width: 1220px;
     width: 100%;
-    padding: 20px 140px 30px 140px;
+    margin-left: 150px;
+    padding: 20px 0px 20px 0px;
 }
 .nav-item{
     display: inline-block;
@@ -257,24 +258,31 @@ main{
 
 
 
-
-
-
 /* Responsive media query*/
 
 @media screen and (max-width:576px){
-    .navbar,.nav-links,.banner-content,.img,.banner-heading,.team-gallary,.feature-content,.team-container{
+    .navbar,.nav-links,.banner-content,.banner-img,
+    .banner-heading,.team-gallary,.feature-content,
+    .team-container,.feature-style,.feature-heading,
+    .site-img,#experience,.feature-description,.years,
+    .experience,.task-heading,.task-description,
+    .task-container,.sponsers-description,.sponsers,
+    .sponsers-heading,.footer-box{
         flex-direction: column;
         text-align: center;
+        padding: 10px;
+    }
+    .navbar{
+        padding: 0px;
     }
     .nav-links{
         margin-top: 10px;
     }
-    .img{
-        width: 250px;
+    .banner-img{
+        max-width: 250px;
         height: 150px;
-        padding: 0px 0px 0px 60px;
-        text-align: center;
+        width: 100%;
+        margin-left: 100px;
     }
     .banner-heading{
         margin-top: 10px;
@@ -282,16 +290,57 @@ main{
     }
     .team-gallary{
         display: block;
-        padding: 0px 0px 0px 15px;
-        margin: 0px; 
-        text-align: center;
+        margin-left: 50px;
     }
     .feature-content{   
-      margin: 0px;
-      padding: 20px 0px 0px 100px;
-      text-align: center;
+        padding:30px 0px 0px 100px; 
+        text-align: center;
+        margin-left: 0px;
+    }
+    .feature-heading{
+        font-size: 36px; 
+        padding: 10px; 
+        margin-left: 10px;
     }
     .team-container{
         display: block;  
     }
+    .feature-description{
+        margin: 0px;
+    }
+    .site-img{
+        max-width: 300px;
+        width: 100%;
+    }
+    #experience{
+        margin-left: 0px;  
+        padding: 10px 20px;
+    }
+    .years{
+        font-size: 20px;
+    }
+    .experience{
+        font-size: 18px;
+    }
+    .task-container{
+        gap: 20px;
+    }
+    .sponsers{
+        display: inline-block;
+        padding: 20px;
+        margin: 0px;
+    }
+    .footer-box{
+        margin: 0px;
+    }
+    .sponsers img{
+        width: 80px;
+    }
+    .sponsers-heading{
+        font-size: 2.2rem;;
+    }
+    .task-heading{
+        font-size: 2.2rem;
+    }
+   
 }
